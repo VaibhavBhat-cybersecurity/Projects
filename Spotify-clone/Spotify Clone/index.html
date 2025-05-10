@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="nav-top">
+        <div class="nav-top-logo">
+            <img src="./assets/logo/Spotify_Primary_Logo_RGB_Green.png" alt="Logo">
+        </div>
+
+        <div class="top-grouping-1 top-group">
+            <div class="nav-top-home">
+                <img src="./assets/icons/home-white-edit.svg" alt="Home icon">
+            </div>
+
+            <div class="nav-top-search">
+                <img src="./assets/icons/search.svg" alt="Search icon">
+                <input type="text" class="nav-top-search-input" placeholder="What do you want to play?">
+            </div>
+        </div>
+
+        <div class="top-grouping-2 top-group">
+            <div class="nav-top-bell">
+                <img src="./assets/icons/bell.svg" alt="Bell icon">
+            </div>
+            <div class="nav-top-profile">
+                <img src="./assets/img/new-profile-picture.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content-container">
+
+        <nav class="nav-left" id="nav-left">
+            <div class="nav-left-head">
+                <a href="#" id="lib-button">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 24 24"
+                            style="fill: #d7cdcd;transform:msFilter;">
+                            <path
+                                d="M7 3h2v18H7zM4 3h2v18H4zm6 0h2v18h-2zm9.062 17.792-6.223-16.89 1.877-.692 6.223 16.89z">
+                            </path>
+                        </svg> -->
+                    <img src="./assets/icons/library_icon.png" alt="" id="lib-icon">
+                    <span class="nav-left-head-text">Your Library</span>
+                </a>
+                <div class="nav-left-col-2">
+                    <img src="./assets/icons/plus.png" alt="" id="nav-left-plus-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);transform: msFilter;">
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="nav-left-tabs">
+                <span>Playlists</span>
+                <span>Artists</span>
+                <span>Albums</span>
+                <span>Podcasts & Shows</span>
+            </div>
+
+            <div class="nav-left-search-recents">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    style="fill: rgba(255, 255, 255, 1);transform:msFilter">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+                <div class="search-col-2">
+                    <span>Recents</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);transform:msFilter">
+                        <path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Likedsong.JPG" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Liked Songs</span>
+                        <span class="nav-left-text-subtitle">&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                style="fill: rgba(27, 195, 87, 1);transform:msFilter;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            &nbsp;Playlist • 501 Songs
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Stephen_Sanchez_-_Until_I_Found_You.png" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Until I Found You</span>
+                        <span class="nav-left-text-subtitle">
+                            Song • Stephen Sanchez
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Kishore.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Best of Kishore Kumar</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Kishore Kumar
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Mohd Rafi.JPG" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Greatest Hits Mohd. Rafi</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Mohammad Rafi
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Arijit Singh All Time Hits.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Best Of Arijit Singh</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Arijit Singh
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/travis-scott-astroworld-cover-art-full.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">ASTROWORLD</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Travis Scott
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/tame impala.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">This Is Tame Impala</span>
+                        <span class="nav-left-text-subtitle">
+                            Playlist • Tame Impala
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/ritviz album art.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Jeet</span>
+                        <span class="nav-left-text-subtitle">
+                            Song • Ritviz
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Kanye The Graduation Cover.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Graduation</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Kanye West
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Coldplay_-_Parachutes.png" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Parachutes</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Coldplay
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Maroon_5_-_Overexposed.png" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Overexposed</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Maroon 5
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/Eminem_Recovery_Album_Cover.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Recovery</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Eminem
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/snoop_dogg_cover.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">The Blue Carpet Treatment</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Snoop Dogg
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/panic_at_the_disco.jpg" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">Too Weird to Live, Too Rare to Die!</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Panic At The Disco
+                        </span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="nav-left-item">
+                <a href="#">
+                    <img src="./assets/img/max_Korzh_album_cover.JPG" alt="">
+                    <div class="nav-text-items">
+                        <span class="nav-left-item-text">
+                            The Little One Has Grown Up</span>
+                        <span class="nav-left-text-subtitle">
+                            Album • Max Korzh
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-top-section">
+                <nav class="main-page-selector">
+                    <div class="page-button all">All</div>
+                    <div class="page-button music">Music</div>
+                    <div class="page-button podcast">Podcasts</div>
+                </nav>
+                <div class="user-playlists">
+
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/Likedsong.JPG" alt="" class="card-preview-img">
+                        <span class="user-playlist-card-text">
+                            Liked Songs
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/Upbeat Pop.JPG" alt="">
+                        <span class="user-playlist-card-text">
+                            Upbeat Pop
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/Dailymix2.JPG" alt=""><span class="user-playlist-card-text">
+                            Daily Mix 2
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/LookatMeHabibi.JPG" alt=""><span class="user-playlist-card-text">
+                            Look at Me Habibi
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/DiscoverWeekly.JPG" alt="">
+                        <span class="user-playlist-card-text">
+                            Discover Weekly
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/70smix.JPG" alt=""><span class="user-playlist-card-text">
+                            70s Mix
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/Hip Hop Mix.jpeg" alt=""><span class="user-playlist-card-text">
+                            Hip Hop Mix
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                    <div class="user-playlist-card">
+                        <img src="./assets/img/rock mix.JPG" alt=""><span class="user-playlist-card-text">
+                            Rock Mix
+                        </span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-misc">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended-cards">
+                <div class="recommended-cards-heading">
+                    <a href="#">Recently Played</a>
+                </div>
+                <div class="main-cards-container">
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended-cards">
+                <div class="recommended-cards-heading">
+                    <a href="#">Recently Played</a>
+                </div>
+                <div class="main-cards-container">
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended-cards">
+                <div class="recommended-cards-heading">
+                    <a href="#">Recently Played</a>
+                </div>
+                <div class="main-cards-container">
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                    <div class="main-card">
+                        <img src="./assets/img/ReleaseRadar.JPG" alt="" class="main-preview-img">
+                        <span>Catch all the latest music</span>
+                        <img src="./assets/icons/play-circle-outline.svg" alt="" class="play-button-main-card">
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-row f-row-1">
+                    <div class="footer-col-group-1">
+                        <div class="footer-col col-1">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">For the Record</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-2">
+                            <h4>Communities</h4>
+                            <ul>
+                                <li><a href="#">For Artists</a></li>
+                                <li><a href="#">Developers</a></li>
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Investors</a></li>
+                                <li><a href="#">Vendors</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-3">
+                            <h4>Useful links</h4>
+                            <ul>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Free Mobile App</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-4">
+                            <h4>Spotify Plans</h4>
+                            <ul>
+                                <li><a href="#">Premium Individual</a></li>
+                                <li><a href="#">Premium Duo</a></li>
+                                <li><a href="#">Premium Family</a></li>
+                                <li><a href="#">Premium Student</a></li>
+                                <li><a href="#">Spotify Free</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-col-group-2">
+                        <div class="footer-icons">
+                            <img src="./assets/icons/instagram.png" alt="">
+                            <img src="./assets/icons/twitter.png" alt="">
+                            <img src="./assets/icons/facebook.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-row f-row-2">
+                    <div class="row-2-group-1">
+                        <div><a href="#">Legal</a></div>
+                        <div><a href="#">Safety & Privacy Center</a></div>
+                        <div><a href="#">Privacy Policy</a></div>
+                        <div><a href="#">Cookies</a></div>
+                        <div><a href="#">About Ads</a></div>
+                        <div><a href="#">Accessibility</a></div>
+                    </div>
+                    <div class="row-2-group-2">
+                        <div>© 2024 Spotify AB</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="player-song-preview">
+            <div class="preview-song-art">
+                <img src="./assets/img/stoney.JPG" alt="" id="player-preview-img">
+            </div>
+            <div class="preview-song-text">
+                <a href="#">
+                    <span class="player-preview-song-title">
+                        Congratulations
+                    </span>
+                </a>
+                <div class="artists">
+                    <a href="#">
+                        <span class="player-preview-song-artist">
+                            Post Malone,
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="player-preview-song-artist">
+                            Quavo
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="preview-song-add">
+                <img src="./assets/icons/Add icon.png" alt="" id="add-to-library-icon">
+            </div>
+        </div>
+
+        <div class="player-controls-container">
+            <div class="player-controls-top">
+                <div class="player-control-item">
+                    <img src="./assets/icons/shuffle icon.png" alt="">
+                </div>
+                <div class="player-control-item previous">
+                    <img src=" ./assets/icons/previous icon.png" alt="">
+                </div>
+                <div class="player-control-item" id="play-button">
+                    <img src="./assets/icons/play button.png" alt="">
+                </div>
+                <div class="player-control-item next"><img src="./assets/icons/next icon.png" alt=""></div>
+                <div class="player-control-item">
+                    <img src="./assets/icons/repeat icon.png" alt="">
+                </div>
+            </div>
+            <div class="player-controls-range">
+                <span class="seek-start">
+                    0:00
+                </span>
+                <input type="range" name="player-progress-bar" id="progress-bar" min="0" max="200" value="0">
+                <span class="seek-end">
+                    3:40
+                </span>
+            </div>
+        </div>
+
+        <div class="player-controls-right">
+            <div class="right-control-item">
+                <img src="./assets/icons/nowplayingicon.jpg" alt="">
+            </div>
+            <div class="right-control-item">
+                <img src="./assets/icons/micicon.jpg" alt="">
+            </div>
+            <div class="right-control-item">
+                <img src="./assets/icons/queueicon.jpg" alt="">
+            </div>
+            <div class="right-control-item">
+                <img src="./assets/icons/connectdevice.jpg" alt="">
+            </div>
+            <div class="right-control-volume">
+                <img src="./assets/icons/volume.JPG" alt="">
+            </div>
+            <input type="range" name="right-volume-slider" id="volume-slider">
+            <div class="right-control-item">
+                <img src="./assets/icons/miniplayer.jpg" alt="">
+            </div>
+
+            <div class="right-control-item">
+                <img src="./assets/icons/fullscreen.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
