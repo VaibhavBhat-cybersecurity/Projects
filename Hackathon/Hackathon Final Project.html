@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart CIty Management</title>
+    <style>
+        
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            height: 100vh;
+            background: url(images.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    header .navbar{
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #myVideo {
+        
+        right: 0;
+        bottom: 0;
+        
+        min-width: 50%;
+        min-height: 50%;
+    }
+
+    .navbar .logo{
+        font-size: 2.1rem;
+        font-weight: 600px;
+    }
+
+    .navbar .logo span{
+        color: rgb(137, 224, 103);
+    }
+
+    .navbar .menu-links{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+    }
+    
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        transition: 0.2s none;
+                    
+    }
+    .navbar a:hover{
+        color: rgb(159, 237, 87);
+    }
+    h1{
+        color: white;
+    }
+
+    .hero-section{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .hero-section .content{
+        color: white;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+    .hero-section .content h1{
+        font-size: 3rem;
+        max-width: 600px;
+    }
+
+    .hero-section .content h1{
+        font-size: 3rem;
+        max-width: 600px;
+    }
+    .hero-section .content p{
+        font-weight: 300;
+        margin-top: 15px;
+        max-width: 600px;
+    }
+
+    .hero-section .content button {
+        background: white;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500px;
+        padding: 12px 30px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+    .hero-section .content button:hover {
+        background: rgb(229, 234, 90);
+        color: white;
+    }
+
+    @media  only screen and (max-width: 850px) {
+        .navbar .menu-links {
+        position: fixed;
+        left: 0;
+        top:0;
+        flex-direction:column;
+        width:260px;
+        height:100vh;
+        background:white;
+        padding:70px 40px 0;
+    }
+
+    .navbar a {
+        color: #f9f9f9;
+    }
+    }
+    
+
+    
+
+    
+
+        
+    
+    </style>
+    
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Pranav.mp4" height="1920px" width="1080px" type="video/mp4">
+    </video>
+    <header>
+        <div class="navbar">
+            <h6><a href="#" class="logo">Smart City Management</a></h6>
+            
+            <ul class="menu-links">
+                
+                <li><a href="trafficm.html">Traffic Management</a></li>
+                <li><a href="wastem.html">Waste Management</a></li>
+                <li><a href="energyc.html">Energy Management</a></li>
+                <li><a href="publics.html">Public Safety Management</a></li>
+                
+            </ul>
+             
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            
+            <center>
+            
+            <h1>WELCOME TO SMART CITY</h1>
+            </center>
+            <center>
+                <br>
+                <br>
+           
+                <h3><strong>
+                System That Uses Advanced Technologies To Monitor, Govern, And Plan Actions For a City...
+                </strong></h3>
+            
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+            <button><a href="About.html">Explore Now</a></button>
+            </center>
+            
+        </div>
+    </section>
+    <script>
+        const header = document.querySelector("header");
+        const menubtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEvenListener("click", () => {
+            header.classlist.toggle("show-mobile-menu");
+        });
+        
+    </script>
+
+</body>
+</html>
